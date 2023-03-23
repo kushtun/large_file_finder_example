@@ -17,4 +17,8 @@ optional arguments:
                         Optional: specify file type. e.g. '.mp3'
 ```
      
-     
+This tool will walk down the provided path, returning a list of files that meet criteria of size (default >= 20 MB), and optionally filtered by final extension.
+So, for example, to find all files larger than 100 MB of type ".zip" in your Downloads directory, you could run:
+
+
+`python ./large-files.py /home/MyAccount/Downloads -s 100 --file_suffix ".zip"`
